@@ -1,5 +1,6 @@
 package com.example.boilerplatespringjdbc.domain.example.service;
 
+import com.example.boilerplatespringjdbc.domain.example.dto.ExampleQuantityResponseDto;
 import com.example.boilerplatespringjdbc.domain.example.entity.Example;
 import com.example.boilerplatespringjdbc.domain.example.repository.ExampleDaoRepo;
 import lombok.RequiredArgsConstructor;
@@ -15,5 +16,10 @@ class ExampleService {
 
     public List<Example> selectAll() {
         return exampleDaoRepo.selectAll();
+    }
+    public ExampleQuantityResponseDto howManyList(){
+        return ExampleQuantityResponseDto.builder()
+                .quantity(Long.valueOf(exampleDaoRepo.selectAll().size()))
+                .build();
     }
 }
