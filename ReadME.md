@@ -34,16 +34,22 @@
     - 원하지 않는 데이터 변경 / 삭제를 방지하기 위해서 제약조건을 설정 해주세요.
     - 데이터 베이스 용량 낭비를 줄이기 위해서 정확한 도메인 설계를 부탁 드릴게요.
     - 차후에 DB 설계는 좋은 포트폴리오가 될 수 있어요.
-    
+
+- 우리 모두 테스트 코드를 경험해봐요 
+  - 서버 배포 , 백엔드는 예상치 못한 오류에 직면하는 경우가 많아요 , 단순히 하나의 class 구조를 바꿔도 많은 문제가 일어날 수 있어요 
+  - 이럴 경우 이전에 작업 했던 것을 일일히 검증 해봐야 해요.
+  - 이런 대참사를 막기 위해서 테스트 코드가 필요해요.
+  - 시큐리티가 포함되지 않은 API 테스트는 상당히 쉬워요! 
+  - **필수는 아니지만 꼭 만들어 줬으면 좋겠어요**
 
 ### 배포 요구사항 
 - AWS / OCP / Heroku / GCP / 구름 IDE 등을 이용하여  실제 외부 환경에서 접속 할 수 있도록 해주세요
-- AWS / OCP / GCP 등 LINUX 환경을 체험해 볼 수 있는  IaaS Platform 을 가장 추천드려요.
-  -OCP 구성의 경우 아래 링크에 How-To-Do 를 정리해놨어요 
-    - https://www.notion.so/gdsc-dju/Rocoli-dda3bf8fb3db4790b7f93c51b8a5b6c1
-    - IaaS는 차후 프로젝트에도 이용 할 수 있어서 꼭 구성해두길 바랄게요.
-   -Heroku 구성의 경우도 아래 링크에 How-to-Do를 정리해보았어요
-    - https://blog.naver.com/shinequasar/222659965540
+  - AWS / OCP / GCP 등 LINUX 환경을 체험해 볼 수 있는  IaaS Platform 을 가장 추천드려요.
+    - OCP 구성의 경우 아래 링크에 How-To-Do 를 정리해놨어요 
+      - https://www.notion.so/gdsc-dju/Rocoli-dda3bf8fb3db4790b7f93c51b8a5b6c1
+        - IaaS는 차후 프로젝트에도 이용 할 수 있어서 꼭 구성해두길 바랄게요.
+      - Heroku 구성의 경우도 아래 링크에 How-to-Do를 정리해보았어요
+        - https://blog.naver.com/shinequasar/222659965540
 - 도메인은 https://xn--220b31d95hq8o.xn--3e0b707e/ 여기서 간단하게 구할 수 있어요.
   - 간단하게 도메인 관리 탭에서 IaaS Platform IP 주소를 연결하면 되요 사용법은 구글에 많이 나와있어요 
 - NGINX 와 같은 로드밸런싱을 이용하여 도메인과 웹 서버를 연결 해봐요 
