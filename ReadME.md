@@ -42,6 +42,8 @@
   -OCP 구성의 경우 아래 링크에 How-To-Do 를 정리해놨어요 
     - https://www.notion.so/gdsc-dju/Rocoli-dda3bf8fb3db4790b7f93c51b8a5b6c1
     - IaaS는 차후 프로젝트에도 이용 할 수 있어서 꼭 구성해두길 바랄게요.
+   -Heroku 구성의 경우도 아래 링크에 How-to-Do를 정리해보았어요
+    - https://blog.naver.com/shinequasar/222659965540
 - 도메인은 https://xn--220b31d95hq8o.xn--3e0b707e/ 여기서 간단하게 구할 수 있어요.
   - 간단하게 도메인 관리 탭에서 IaaS Platform IP 주소를 연결하면 되요 사용법은 구글에 많이 나와있어요 
 - NGINX 와 같은 로드밸런싱을 이용하여 도메인과 웹 서버를 연결 해봐요 
@@ -56,7 +58,8 @@
 - GIT HUB 주소 
 
 ### **엔드포인트 예시**
-
+- 엔드포인트를 설계할 때는 URI에 노출되어도 괜찮을 자원정보와, 보안상 감춰두면 좋을 자원을 고려해 설계해보면 좋아요
+  -  예를들어 현재 page의 순번같은 자원은 노출되어도 괜찮지만, user의 개인정보 등과 같은 자원은 엔드포인트에 넣으면 보안에 취약해질 수 있어요.
 ---
 - /toDoList
     - 내용 : toDoList 내용 생성 
